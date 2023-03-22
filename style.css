@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.nav-list ul {
+  margin-left: auto !important;
+  margin-right: 0px !important;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+nav h2, nav ul {
+  margin-bottom: 0px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin-right: 20px;
+}
+
+main img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+}
+
+.portfolio-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.portfolio-container h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.img-container img{
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: aqua;
+  color: white;
+}
+
+.about-container h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.about-container > div {
+  column-gap: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.about-container > div > p {
+  text-align: justify;
+  margin-bottom: 3
+  0px;
+}
+
+.about-container button {
+  color: white;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contact-container {
+  padding: 70px;
+}
+
+.contact-container h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.contact-container input, .contact-container textarea{
+  border: none;
+  box-shadow: 0 4px 2px -2px gray;
+  margin-bottom: 20px;
+}
+
+.contact-container button {
+  background-color: aqua;
+  padding: 10px 20px;
+  color: white;
+}
+
+.footer-container {
+  padding: 70px;
+  background-color: lightslategray;
+  color: white;
+}
+
+.footer-container > div {
+  width: 33%;
+}
+
+.footer-container > div > h2, p {
+  text-align: center;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-container {
+  column-gap: 8px;
+}
+
+.icon-container i{
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 575px){
+  .about-container > div{
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container > div {
+    margin-bottom: 20px;
+  }
+
+  .nav-list.responsive {position: relative;}
+  .nav-list.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-list.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
